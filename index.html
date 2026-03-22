@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sardorlar Platformasi — Buxoro Viloyati </title>
+<title>Sardorlar Platformasi — Buxoro Viloyati OBT</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Georgia,serif;background:#f0f4f1;color:#0d2018;transition:background .3s,color .3s}
 body.dark{background:#0a1612;color:#e8f5ee}
 ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#e4ede7}::-webkit-scrollbar-thumb{background:#0a5c36;border-radius:3px}
-
+ 
 /* NAV */
 nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:2px solid #c8ddd0;display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:60px;box-shadow:0 2px 12px rgba(10,92,54,.1)}
 body.dark nav{background:#132218;border-bottom-color:#1f3d2b}
@@ -30,7 +30,7 @@ body.dark .tbtn{background:#1a2e22;border-color:#1f3d2b}
 body.dark .tdot{transform:translateX(20px);background:#16a05f}
 .abtn{padding:7px 13px;border-radius:8px;background:#0a5c36;color:#fff;border:none;cursor:pointer;font-size:.79rem;font-weight:700;font-family:Georgia,serif;transition:.2s}
 .abtn:hover{background:#16a05f}
-
+ 
 /* HERO */
 .hero{background:linear-gradient(135deg,#0a5c36,#0d7a48 50%,#16a05f);color:#fff;padding:44px 24px 36px;overflow:hidden;position:relative}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 75% 50%,rgba(255,255,255,.07),transparent 60%)}
@@ -41,19 +41,19 @@ body.dark .tdot{transform:translateX(20px);background:#16a05f}
 .hstats{display:flex;gap:26px;flex-wrap:wrap}
 .hsn{font-size:1.9rem;font-weight:900;color:#e8c84b;line-height:1}
 .hsl{font-size:.72rem;opacity:.75;margin-top:2px}
-
+ 
 /* NOTIF BANNER */
 .notif-bar{display:none;background:linear-gradient(90deg,#1565C0,#1976D2);color:#fff;padding:10px 24px;font-size:.83rem;align-items:center;justify-content:space-between;gap:12px}
 .notif-bar.on{display:flex}
 .notif-close{background:rgba(255,255,255,.2);border:none;color:#fff;cursor:pointer;border-radius:50%;width:22px;height:22px;font-size:.8rem;display:flex;align-items:center;justify-content:center}
-
+ 
 /* PAGE */
 .page{max-width:1200px;margin:0 auto;padding:32px 20px}
 .view{display:none}.view.on{display:block}
 .stitle{font-size:1.4rem;font-weight:800;color:#0d2018;margin-bottom:5px;display:flex;align-items:center;gap:7px}
 body.dark .stitle{color:#e8f5ee}
 .ssub{color:#6b8a78;font-size:.85rem;margin-bottom:22px}
-
+ 
 /* STAT CARDS */
 .sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:13px;margin-bottom:32px}
 .sc{background:#fff;border:1px solid #d1e0d7;border-radius:13px;padding:18px;box-shadow:0 2px 10px rgba(10,92,54,.08);position:relative;overflow:hidden;transition:.25s}
@@ -64,7 +64,7 @@ body.dark .sc{background:#132218;border-color:#1f3d2b}
 .sc-num{font-size:1.8rem;font-weight:900;color:#0a5c36}
 body.dark .sc-num{color:#16a05f}
 .sc-label{font-size:.73rem;color:#6b8a78;margin-top:2px}
-
+ 
 /* PODIUM */
 .podium{display:flex;align-items:flex-end;justify-content:center;gap:13px;margin-bottom:36px;flex-wrap:wrap}
 .pc{border-radius:13px;padding:20px 16px;text-align:center;box-shadow:0 4px 18px rgba(0,0,0,.12);transition:.25s;min-width:180px;cursor:default}
@@ -79,7 +79,7 @@ body.dark .sc-num{color:#16a05f}
 .pscore{font-size:.8rem;font-weight:700;color:#0a5c36;background:rgba(10,92,54,.1);border-radius:6px;padding:3px 9px;margin-top:6px;display:inline-block}
 .tgbtn{margin-top:8px;padding:6px 12px;border-radius:8px;background:#2196F3;color:#fff;border:none;cursor:pointer;font-size:.74rem;font-weight:700;font-family:Georgia,serif;transition:.2s;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
 .tgbtn:hover{background:#1565C0;transform:scale(1.04)}
-
+ 
 /* REYTING TABLE */
 .rcontrols{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:14px;align-items:center}
 .sinput{flex:1;min-width:160px;padding:9px 13px;border-radius:9px;border:1px solid #d1e0d7;background:#fff;color:#0d2018;font-size:.85rem;outline:none;transition:.2s;font-family:Georgia,serif}
@@ -133,7 +133,7 @@ body.dark .sa{color:#16a05f}
 .pbtn{width:32px;height:32px;border-radius:7px;background:#fff;border:1px solid #d1e0d7;cursor:pointer;font-size:.81rem;color:#3a5a47;transition:.2s;display:flex;align-items:center;justify-content:center}
 body.dark .pbtn{background:#132218;border-color:#1f3d2b;color:#9bcfb0}
 .pbtn:hover,.pbtn.on{background:#0a5c36;color:#fff;border-color:#0a5c36}
-
+ 
 /* TUMAN STATS */
 .tuman-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
 .ttab{padding:7px 14px;border-radius:20px;border:1px solid #d1e0d7;background:#fff;color:#3a5a47;font-size:.8rem;font-weight:600;cursor:pointer;font-family:Georgia,serif;transition:.2s}
@@ -164,7 +164,7 @@ body.dark .bar-chart::after{background:#1f3d2b}
 .bval{font-size:.65rem;font-weight:700;color:#0a5c36;white-space:nowrap}
 body.dark .bval{color:#16a05f}
 .blabel{font-size:.6rem;color:#6b8a78;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;text-align:center}
-
+ 
 /* CALENDAR */
 .cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
 .cal-nav{background:none;border:1px solid #d1e0d7;border-radius:8px;cursor:pointer;padding:6px 12px;font-size:.85rem;color:#3a5a47;font-family:Georgia,serif;transition:.2s}
@@ -193,7 +193,7 @@ body.dark .ev-item{background:#132218;border-color:#1f3d2b}
 .ev-mon{font-size:.65rem;opacity:.85}
 .ev-title{font-weight:700;font-size:.9rem;margin-bottom:3px}
 .ev-desc{font-size:.78rem;color:#6b8a78;line-height:1.5}
-
+ 
 /* BALL BERISH */
 .ball-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
 .ball-card{background:#fff;border:1px solid #d1e0d7;border-radius:13px;padding:16px;box-shadow:0 2px 10px rgba(10,92,54,.08);transition:.25s}
@@ -215,7 +215,7 @@ body.dark .ball-input{background:#1a2e22;border-color:#1f3d2b;color:#e8f5ee}
 .btn-plus:hover{background:#16a05f}
 .btn-minus{padding:7px 12px;border-radius:8px;background:rgba(220,38,38,.1);color:#dc2626;border:1px solid rgba(220,38,38,.2);cursor:pointer;font-weight:700;font-size:.82rem;transition:.2s}
 .btn-minus:hover{background:rgba(220,38,38,.2)}
-
+ 
 /* TASK */
 .tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:15px}
 .tcard{background:#fff;border:1px solid #d1e0d7;border-radius:13px;padding:17px;box-shadow:0 2px 10px rgba(10,92,54,.08);transition:.25s}
@@ -234,7 +234,7 @@ body.dark .tdesc{color:#9bcfb0}
 .tdl{font-size:.71rem;color:#6b8a78}
 .tpts{font-size:.8rem;font-weight:800;color:#0a5c36}
 body.dark .tpts{color:#16a05f}
-
+ 
 /* GALLERY */
 .ggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:17px}
 .gcard{background:#fff;border:1px solid #d1e0d7;border-radius:13px;overflow:hidden;box-shadow:0 2px 10px rgba(10,92,54,.08);transition:.25s}
@@ -246,7 +246,7 @@ body.dark .gcard{background:#132218;border-color:#1f3d2b}
 .gmeta{font-size:.74rem;color:#6b8a78;margin-bottom:10px}
 .wbtn{padding:7px;border-radius:8px;background:#0a5c36;color:#fff;border:none;cursor:pointer;font-size:.78rem;font-weight:700;font-family:Georgia,serif;transition:.2s;width:100%}
 .wbtn:hover{background:#16a05f}
-
+ 
 /* NEWS */
 .ngrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:17px}
 .ncard{background:#fff;border:1px solid #d1e0d7;border-radius:13px;padding:17px;box-shadow:0 2px 10px rgba(10,92,54,.08);transition:.25s}
@@ -258,7 +258,7 @@ body.dark .ntag{color:#16a05f}
 .nbody{font-size:.81rem;color:#3a5a47;line-height:1.6;margin-bottom:11px}
 body.dark .nbody{color:#9bcfb0}
 .ndate{font-size:.71rem;color:#6b8a78}
-
+ 
 /* MODALS */
 .moverlay{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:200;display:none;align-items:center;justify-content:center;backdrop-filter:blur(3px)}
 .moverlay.on{display:flex}
@@ -304,7 +304,7 @@ body.dark .aitem{background:#1a2e22;border-color:#1f3d2b}
 .ameta{font-size:.7rem;color:#6b8a78;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .delbtn{padding:5px 10px;border-radius:7px;background:rgba(220,38,38,.1);color:#dc2626;border:none;cursor:pointer;font-size:.75rem;font-weight:700;font-family:Georgia,serif;transition:.2s;flex-shrink:0}
 .delbtn:hover{background:rgba(220,38,38,.2)}
-
+ 
 /* LOGIN */
 .login-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:300;display:none;align-items:center;justify-content:center;backdrop-filter:blur(6px)}
 .login-overlay.on{display:flex}
@@ -324,7 +324,7 @@ body.dark .linput:focus{background:#132218}
 .lerr.on{display:block}
 .lcancel{background:none;border:none;cursor:pointer;color:#6b8a78;font-size:.79rem;margin-top:9px;font-family:Georgia,serif;text-decoration:underline}
 .lcancel:hover{color:#0a5c36}
-
+ 
 /* TOAST */
 .tcs{position:fixed;bottom:20px;right:20px;z-index:999;display:flex;flex-direction:column;gap:6px}
 .toast{background:#fff;border:1px solid #d1e0d7;border-radius:10px;padding:11px 15px;box-shadow:0 8px 22px rgba(0,0,0,.12);display:flex;align-items:center;gap:8px;font-size:.83rem;animation:si .3s ease,fo .3s ease 2.7s forwards;max-width:290px}
@@ -334,7 +334,7 @@ body.dark .toast{background:#132218;border-color:#1f3d2b;color:#e8f5ee}
 .toast.w{border-left:4px solid #f59e0b}
 @keyframes si{from{transform:translateX(70px);opacity:0}to{transform:translateX(0);opacity:1}}
 @keyframes fo{to{opacity:0;transform:translateX(70px)}}
-
+ 
 /* MOBILE */
 @media(max-width:680px){
   .nlinks{display:none}
@@ -358,20 +358,20 @@ body.dark .mni.on .ml{color:#16a05f}
 </style>
 </head>
 <body>
-
+ 
 <!-- NOTIFICATION BANNER -->
 <div class="notif-bar" id="notifBar">
   <span id="notifMsg">📢 Yangi e'lon: Navro'z tadbirini tashkil etish uchun yangi topshiriq qo'shildi!</span>
   <button class="notif-close" onclick="document.getElementById('notifBar').classList.remove('on')">✕</button>
 </div>
-
+ 
 <!-- NAV -->
 <nav>
   <div class="nbrand">
     <div class="nlogo">🌿</div>
     <div>
       <div class="ntitle">Sardorlar Platformasi</div>
-      <div class="nsub">Buxoro Viloyati</div>
+      <div class="nsub">Buxoro Viloyati OBT</div>
     </div>
   </div>
   <div class="nlinks">
@@ -391,36 +391,36 @@ body.dark .mni.on .ml{color:#16a05f}
     <button class="abtn" onclick="openAdmin()">⚙️ Admin</button>
   </div>
 </nav>
-
+ 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-in">
-    <div class="hbadge">⭐️ O'zbekiston Bolalar Tashkiloti · Buxoro Viloyati</div>
+    <div class="hbadge">🌿 O'zbekiston Bolalar Tashkiloti · Buxoro Viloyati</div>
     <h1>Sardorlar Faoliyat Platformasi</h1>
-    <p>Buxoro viloyati Bosh Sardori Asilbek Maxsudov boshchiligida 4770 nafar sardorning faoliyati, reytingi va musobaqasi.</p>
+    <p>Asilbek Maxsudov boshchiligida 4770 nafar sardorning faoliyati, reytingi va musobaqasi.</p>
     <div class="hstats">
       <div><div class="hsn" id="h1">4770</div><div class="hsl">Jami sardorlar</div></div>
       <div><div class="hsn" id="h2">312</div><div class="hsl">Faol sardorlar</div></div>
-      <div><div class="hsn" id="h3">20</div><div class="hsl">Topshirilgan videolar</div></div>
-      <div><div class="hsn">13</div><div class="hsl">Tuman vs shahar</div></div>
+      <div><div class="hsn" id="h3">87</div><div class="hsl">Topshirilgan videolar</div></div>
+      <div><div class="hsn">12</div><div class="hsl">Tuman</div></div>
     </div>
   </div>
 </div>
-
+ 
 <!-- PAGE -->
 <div class="page">
-
+ 
   <!-- DASHBOARD -->
   <div class="view on" id="v-dashboard">
     <div class="sg" id="sg"></div>
     <div class="stitle">🥇 Top 3 Sardorlar</div>
-    <div class="ssub">Eng ko'p ovoz to'plagan sardorlar</div>
+    <div class="ssub">Eng ko'p ball to'plagan sardorlar</div>
     <div class="podium" id="pod"></div>
     <div class="stitle" style="margin-top:28px">📢 So'nggi Yangiliklar</div>
     <div class="ssub">Barcha e'lonlar va yangiliklar</div>
     <div class="ngrid" id="ln"></div>
   </div>
-
+ 
   <!-- REYTING -->
   <div class="view" id="v-reyting">
     <div class="stitle">🏆 Sardorlar Reytingi</div>
@@ -432,7 +432,7 @@ body.dark .mni.on .ml{color:#16a05f}
         <option>Buxoro tumani</option><option>Kogon tumani</option><option>G'ijduvon tumani</option>
         <option>Shofirkon tumani</option><option>Vobkent tumani</option><option>Peshku tumani</option>
         <option>Romitan tumani</option><option>Jondor tumani</option><option>Qorovulbozor tumani</option>
-        <option>Olot tumani</option><option>Qorako'l tumani</option><option>Buxoro shahar</option><option>Kogon shahar</option>
+        <option>Olot tumani</option><option>Qorako'l tumani</option><option>Ganjidarya tumani</option>
       </select>
       <select class="fsel" id="stf" onchange="filt()">
         <option value="">Barcha holat</option>
@@ -454,7 +454,7 @@ body.dark .mni.on .ml{color:#16a05f}
     </div>
     <div class="pager" id="pgr"></div>
   </div>
-
+ 
   <!-- TUMANLAR -->
   <div class="view" id="v-tuman">
     <div class="stitle">🗺 Tumanlar Statistikasi</div>
@@ -465,7 +465,7 @@ body.dark .mni.on .ml{color:#16a05f}
     </div>
     <div class="tuman-grid" id="tumanGrid"></div>
   </div>
-
+ 
   <!-- BALL BERISH -->
   <div class="view" id="v-ball">
     <div class="stitle">🏅 Ball Berish / Ayirish</div>
@@ -475,7 +475,7 @@ body.dark .mni.on .ml{color:#16a05f}
     </div>
     <div class="ball-grid" id="ballGrid"></div>
   </div>
-
+ 
   <!-- KALENDAR -->
   <div class="view" id="v-kalend">
     <div class="stitle">📅 Tadbir Kalendari</div>
@@ -499,30 +499,30 @@ body.dark .mni.on .ml{color:#16a05f}
       </div>
     </div>
   </div>
-
+ 
   <!-- TOPSHIRIQLAR -->
   <div class="view" id="v-topshiriq">
     <div class="stitle">📋 Faol Topshiriqlar</div>
     <div class="ssub">Sardorlar uchun joriy vazifalar</div>
     <div class="tgrid" id="tgrid"></div>
   </div>
-
+ 
   <!-- GALEREYA -->
   <div class="view" id="v-galereya">
     <div class="stitle">🎥 Video Galereya</div>
     <div class="ssub">Sardorlar yuklagan faoliyat videolari</div>
     <div class="ggrid" id="ggrid"></div>
   </div>
-
+ 
   <!-- YANGILIKLAR -->
   <div class="view" id="v-yangilik">
     <div class="stitle">📢 Yangiliklar va E'lonlar</div>
     <div class="ssub">Barcha yangiliklar va e'lonlar</div>
     <div class="ngrid" id="ngrid"></div>
   </div>
-
+ 
 </div>
-
+ 
 <!-- MOBILE NAV -->
 <div class="mnav">
   <button class="mni on" onclick="show('dashboard',null,this)"><span class="mi">📊</span><span class="ml">Bosh</span></button>
@@ -532,7 +532,7 @@ body.dark .mni.on .ml{color:#16a05f}
   <button class="mni" onclick="show('kalend',null,this)"><span class="mi">📅</span><span class="ml">Kalendar</span></button>
   <button class="mni" onclick="show('yangilik',null,this)"><span class="mi">📢</span><span class="ml">Yangilik</span></button>
 </div>
-
+ 
 <!-- LOGIN MODAL -->
 <div class="login-overlay" id="loginModal">
   <div class="login-box">
@@ -545,7 +545,7 @@ body.dark .mni.on .ml{color:#16a05f}
     <button class="lcancel" onclick="cancelLogin()">Bekor qilish</button>
   </div>
 </div>
-
+ 
 <!-- ADMIN MODAL -->
 <div class="moverlay" id="adm">
   <div class="modal">
@@ -564,7 +564,7 @@ body.dark .mni.on .ml{color:#16a05f}
       <button class="atab" onclick="atab('cfg',this)">⚙️ Sozlama</button>
     </div>
     <div class="apanel">
-
+ 
       <!-- SARDORLAR -->
       <div class="asec on" id="as-sardorlar">
         <h3 style="margin-bottom:13px;font-size:.97rem;font-weight:800">Yangi sardor qo'shish</h3>
@@ -575,7 +575,7 @@ body.dark .mni.on .ml{color:#16a05f}
               <option>Buxoro tumani</option><option>Kogon tumani</option><option>G'ijduvon tumani</option>
               <option>Shofirkon tumani</option><option>Vobkent tumani</option><option>Peshku tumani</option>
               <option>Romitan tumani</option><option>Jondor tumani</option><option>Qorovulbozor tumani</option>
-              <option>Olot tumani</option><option>Qorako'l tumani</option><option>Buxoro shahar</option><option>Kogon shahar</option>
+              <option>Olot tumani</option><option>Qorako'l tumani</option><option>Ganjidarya tumani</option>
             </select>
           </div>
           <div class="fg"><label class="flabel">Telegram @username</label><input class="finput" id="st" placeholder="@username"></div>
@@ -588,7 +588,7 @@ body.dark .mni.on .ml{color:#16a05f}
         <div style="margin-top:18px;font-weight:800;font-size:.88rem">Mavjud sardorlar: <span id="scount">0</span></div>
         <ul class="alist" id="slist"></ul>
       </div>
-
+ 
       <!-- TOPSHIRIQ -->
       <div class="asec" id="as-topshiriq">
         <h3 style="margin-bottom:13px;font-size:.97rem;font-weight:800">Yangi topshiriq qo'shish</h3>
@@ -605,7 +605,7 @@ body.dark .mni.on .ml{color:#16a05f}
         <button class="sbtn" onclick="addT()">✅ Topshiriq qo'shish</button>
         <ul class="alist" id="tlist"></ul>
       </div>
-
+ 
       <!-- YANGILIK -->
       <div class="asec" id="as-yangilik">
         <h3 style="margin-bottom:13px;font-size:.97rem;font-weight:800">Yangilik qo'shish</h3>
@@ -620,7 +620,7 @@ body.dark .mni.on .ml{color:#16a05f}
         <button class="sbtn" onclick="addN()">✅ Yangilik qo'shish</button>
         <ul class="alist" id="nlist"></ul>
       </div>
-
+ 
       <!-- GALEREYA -->
       <div class="asec" id="as-galereya">
         <h3 style="margin-bottom:13px;font-size:.97rem;font-weight:800">Video qo'shish</h3>
@@ -633,7 +633,7 @@ body.dark .mni.on .ml{color:#16a05f}
         <button class="sbtn" onclick="addV()">✅ Video qo'shish</button>
         <ul class="alist" id="vlist"></ul>
       </div>
-
+ 
       <!-- TADBIRLAR -->
       <div class="asec" id="as-events">
         <h3 style="margin-bottom:13px;font-size:.97rem;font-weight:800">Tadbir qo'shish</h3>
@@ -652,7 +652,7 @@ body.dark .mni.on .ml{color:#16a05f}
         <button class="sbtn" onclick="addEv()">✅ Tadbir qo'shish</button>
         <ul class="alist" id="evlist"></ul>
       </div>
-
+ 
       <!-- XABAR -->
       <div class="asec" id="as-xabar">
         <h3 style="margin-bottom:13px;font-size:.97rem;font-weight:800">💬 Sardorlarga xabar yuborish</h3>
@@ -680,7 +680,7 @@ body.dark .mni.on .ml{color:#16a05f}
           Xabar yuborilganda quyidagi sardorlar ro'yxati va Telegram havolalari ko'rinadi. Siz ularning har biriga @username orqali xabar yuborishingiz mumkin.
         </div>
       </div>
-
+ 
       <!-- PAROL -->
       <div class="asec" id="as-parol">
         <h3 style="margin-bottom:13px;font-size:.97rem;font-weight:800">🔑 Parolni o'zgartirish</h3>
@@ -692,7 +692,7 @@ body.dark .mni.on .ml{color:#16a05f}
         <button class="sbtn" onclick="changePass()">🔑 Parolni o'zgartirish</button>
         <div class="lerr" id="passErr" style="display:none;margin-top:8px"></div>
       </div>
-
+ 
       <!-- SOZLAMA -->
       <div class="asec" id="as-cfg">
         <h3 style="margin-bottom:13px;font-size:.97rem;font-weight:800">⚙️ Hero statistikasini yangilash</h3>
@@ -702,24 +702,24 @@ body.dark .mni.on .ml{color:#16a05f}
         </div>
         <button class="sbtn" onclick="saveCfg()">💾 Saqlash</button>
       </div>
-
+ 
     </div>
   </div>
 </div>
-
+ 
 <div class="tcs" id="tcs"></div>
-
+ 
 <script>
 // =====================================================
 // DATABASE
 // =====================================================
 var ADMIN_PASS = 'asilbek2026';
-
+ 
 var DB = {
   sardorlar: [
-    {id:1,name:"Shofirkon",region:"Shofirkon tumani sardorlari",tg:"muzaffarova162,score:630,scoreW:630,scoreM:630,desc:"Navro'z va Mustaqillik tadbirlarini faol tashkil etdi",em:"🥇",img:""},
-    {id:2,name:"Gi'jduvon",region:"Gi'jduvon tumani sardorlari",tg:"Maktab_sardori_Gijduvon",score:580,scoreW:580,scoreM:580,desc:"Navruz tadbirlarini uyushtirdi",em:"🥈",img:""},
-    {id:3,name:"Qorako'l",region:"Qorako'l tumani sardorlari",tg:"zarshidqurbonov",score:400,scoreW:400,scoreM:400,desc:"Sumalak tayyorlash tadbirini tashkil etdi",em:"🥉",img:""},
+    {id:1,name:"Aliyev Bekzod",region:"Buxoro tumani",tg:"sardor_bekzod",score:97,scoreW:97,scoreM:97,desc:"Navro'z va Mustaqillik tadbirlarini faol tashkil etdi",em:"👨",img:""},
+    {id:2,name:"Nazarova Nilufar",region:"Kogon tumani",tg:"nilufar_kogon",score:91,scoreW:88,scoreM:91,desc:"Eng birinchi video topshirdi, sport tadbirlarini uyushtirdi",em:"👩",img:""},
+    {id:3,name:"Toshmatov Jasur",region:"G'ijduvon tumani",tg:"jasur_gijduvon",score:87,scoreW:82,scoreM:87,desc:"Sumalak tayyorlash tadbirini tashkil etdi",em:"👨",img:""},
     {id:4,name:"Rahimova Sarvinoz",region:"Shofirkon tumani",tg:"sarvinoz_shof",score:82,scoreW:78,scoreM:82,desc:"Ijodiy video tayyorladi, 50+ ishtirokchi jalb etdi",em:"👩",img:""},
     {id:5,name:"Qodirov Mansur",region:"Vobkent tumani",tg:"mansur_vobkent",score:79,scoreW:79,scoreM:75,desc:"Mahalla sport musobaqasini uyushtirdi",em:"👨",img:""},
     {id:6,name:"Yusupova Zulfiya",region:"Romitan tumani",tg:"zulfiya_romitan",score:74,scoreW:70,scoreM:74,desc:"Kitob o'qish tadbirini tashkil etdi",em:"👩",img:""},
@@ -736,13 +736,13 @@ var DB = {
   ],
   news:[
     {id:1,title:"Yangi topshiriq e'lon qilindi!",body:"Navro'z tadbirini tashkil etish uchun yangi topshiriq qo'shildi. Eng faol sardorlarga mukofot beriladi.",tag:"Topshiriq",date:"19 Mart 2026"},
-    {id:2,title:"Top 3 sardorlar aniqlandi",body:"Bu hafta eng faol sardorlar aniqlandi. Birinchi o'rinni Shofirkon tuman Sardorlari egalladi.",tag:"Natija",date:"22 Mart 2026"},
-    {id:3,title:"Platform yangilandi",body:"Sardorlar platformasi yangi dizayn va funksiyalar bilan yangilandi.",tag:"Yangilik",date:"22 Mart 2026"}
+    {id:2,title:"Top 3 sardorlar aniqlandi",body:"Bu oy eng faol sardorlar aniqlandi. Birinchi o'rinni Bekzod Aliyev egalladi.",tag:"Natija",date:"15 Mart 2026"},
+    {id:3,title:"Platform yangilandi",body:"Sardorlar platformasi yangi dizayn va funksiyalar bilan yangilandi.",tag:"Yangilik",date:"10 Mart 2026"}
   ],
   videos:[
-    {id:1,title:"Navro'z tadbiri videosi",sardor:"Shofirkon",url:"#",em:"🌺"},
-    {id:2,title:"Sport musobaqasi videosi",sardor:"Gijduvon",url:"#",em:"⚽"},
-    {id:3,title:"Kitobxonlik tadbiri videosi",sardor:"Qorakul",url:"#",em:"📚"}
+    {id:1,title:"Navro'z tadbiri videosi",sardor:"Jasur Toshmatov",url:"#",em:"🌺"},
+    {id:2,title:"Sport musobaqasi videosi",sardor:"Bekzod Aliyev",url:"#",em:"⚽"},
+    {id:3,title:"Kitobxonlik tadbiri videosi",sardor:"Nilufar Nazarova",url:"#",em:"📚"}
   ],
   events:[
     {id:1,name:"Navro'z bayrami",date:"2026-03-21",desc:"Barcha tumanlar uchun umumiy Navro'z tadbiri",region:""},
@@ -751,17 +751,17 @@ var DB = {
   ],
   cfg:{active:312,videos:87}
 };
-
+ 
 // =====================================================
 // LOCALSTORAGE — MA'LUMOTLARNI SAQLASH
 // =====================================================
 var LS_KEY='sardorlar_db_v2';
 var LS_PASS='sardorlar_pass_v2';
-
+ 
 function saveDB(){
   try{localStorage.setItem(LS_KEY,JSON.stringify(DB))}catch(e){}
 }
-
+ 
 function loadDB(){
   try{
     var raw=localStorage.getItem(LS_KEY);
@@ -780,15 +780,15 @@ function loadDB(){
     if(sp)ADMIN_PASS=sp;
   }catch(e){}
 }
-
+ 
 var cp=1,pp=10,fd=[],rtab='all',nid=200;
 var calYear=2026,calMonth=2; // 0-indexed (2=March)
-
+ 
 function uid(){return ++nid}
 function g(id){return document.getElementById(id)}
 function v(id){return g(id)?g(id).value.trim():''}
 function c(id){if(g(id))g(id).value=''}
-
+ 
 // =====================================================
 // AVATAR HELPER
 // =====================================================
@@ -799,7 +799,7 @@ function avatarHtml(s,size){
   }
   return '<div class="sav" style="width:'+size+'px;height:'+size+'px;font-size:'+(size*0.45)+'px">'+s.em+'</div>';
 }
-
+ 
 // =====================================================
 // RENDER ALL
 // =====================================================
@@ -809,22 +809,23 @@ function renderAll(){
   g('h2').textContent=DB.cfg.active;
   g('h3').textContent=DB.cfg.videos;
 }
-
+ 
 function rStat(){
   var avg=Math.round(DB.sardorlar.reduce(function(s,x){return s+x.score},0)/DB.sardorlar.length);
   var items=[
     {icon:"👥",num:DB.sardorlar.length,label:"Sardorlar soni"},
     {icon:"🏆",num:DB.cfg.active,label:"Faol sardorlar"},
     {icon:"🎥",num:DB.cfg.videos,label:"Topshirilgan videolar"},
+    {icon:"⭐",num:avg+"%",label:"O'rtacha faollik"}
   ];
   g('sg').innerHTML=items.map(function(i){
     return '<div class="sc"><div class="sc-icon">'+i.icon+'</div><div class="sc-num">'+i.num+'</div><div class="sc-label">'+i.label+'</div></div>';
   }).join('');
 }
-
+ 
 function rPod(){
   var top3=DB.sardorlar.slice().sort(function(a,b){return b.score-a.score}).slice(0,3);
-  var cls=['gold','silver','bronze'],medals=['🥇','🥈','🥉'],prizes=['WEBSITE','WEBSITE','WEBSITE'];
+  var cls=['gold','silver','bronze'],medals=['🥇','🥈','🥉'],prizes=['500 000 so\'m','300 000 so\'m','200 000 so\'m'];
   g('pod').innerHTML=top3.map(function(s,i){
     var av=s.img?'<img src="'+s.img+'" style="width:64px;height:64px;border-radius:50%;object-fit:cover;margin:0 auto 9px;border:3px solid rgba(255,255,255,.8);display:block" onerror="this.outerHTML=\'<div class=pavatar>'+s.em+'</div>\'">'
       :'<div class="pavatar">'+s.em+'</div>';
@@ -832,24 +833,24 @@ function rPod(){
       +'<div class="prank">'+medals[i]+'</div>'+av
       +'<div class="pname">'+s.name+'</div>'
       +'<div class="pregion">'+s.region+'</div>'
-      +'<div class="pscore">⭐ '+s.score+' ta ovoz'+prizes[i]+'</div>'
+      +'<div class="pscore">⭐ '+s.score+' ball · '+prizes[i]+'</div>'
       +'<a class="tgbtn" href="https://t.me/'+s.tg+'" target="_blank">✉️ Murojaat qilish</a>'
       +'</div>';
   }).join('');
 }
-
+ 
 function getScore(s){
   if(rtab==='week') return s.scoreW||s.score;
   if(rtab==='month') return s.scoreM||s.score;
   return s.score;
 }
-
+ 
 function getSt(sc){
   if(sc>=75) return {l:"Faol",c:"sa"};
   if(sc>=50) return {l:"O'rta",c:"sm"};
   return {l:"Past",c:"sp"};
 }
-
+ 
 function getDiff(s){
   var cur=getScore(s);
   var prev=s.scorePrev||Math.max(0,cur-Math.floor(Math.random()*10)-1);
@@ -858,16 +859,16 @@ function getDiff(s){
   if(d<0) return '<span class="sdiff dn">▼ '+d+'</span>';
   return '<span class="sdiff eq">— 0</span>';
 }
-
+ 
 function filt(){cp=1;rReyting()}
-
+ 
 function setRtab(t,btn){
   rtab=t;
   document.querySelectorAll('.rbtn').forEach(function(b){b.classList.remove('on')});
   btn.classList.add('on');
   filt();
 }
-
+ 
 function rReyting(){
   var s=(v('srch')||'').toLowerCase();
   var r=v('regf')||'';
@@ -900,17 +901,17 @@ function rReyting(){
   g('pgr').innerHTML=ph;
 }
 function gp(p){cp=p;rReyting()}
-
+ 
 // TUMANLAR
 function rTuman(){
-  var tumanlar=["Buxoro tumani","Kogon tumani","G'ijduvon tumani","Shofirkon tumani","Vobkent tumani","Peshku tumani","Romitan tumani","Jondor tumani","Qorovulbozor tumani","Olot tumani","Qorako'l tumani","Buxoro shahar","Kogon shahar"];
+  var tumanlar=["Buxoro tumani","Kogon tumani","G'ijduvon tumani","Shofirkon tumani","Vobkent tumani","Peshku tumani","Romitan tumani","Jondor tumani","Qorovulbozor tumani","Olot tumani","Qorako'l tumani","Ganjidarya tumani"];
   var data=tumanlar.map(function(t){
     var ss=DB.sardorlar.filter(function(s){return s.region===t});
     var avg=ss.length?Math.round(ss.reduce(function(a,b){return a+b.score},0)/ss.length):0;
     return {name:t,count:ss.length,avg:avg,top:ss.length?ss.reduce(function(a,b){return a.score>b.score?a:b},ss[0]):null};
   });
   var maxAvg=Math.max.apply(null,data.map(function(d){return d.avg}));
-
+ 
   // Bar chart
   var h=data.map(function(d){
     var pct=maxAvg?Math.round(d.avg/maxAvg*100):0;
@@ -922,7 +923,7 @@ function rTuman(){
       +'</div>';
   }).join('');
   g('barChart').innerHTML=h;
-
+ 
   // Cards
   g('tumanGrid').innerHTML=data.map(function(d){
     var pct=maxAvg?Math.round(d.avg/maxAvg*100):0;
@@ -935,7 +936,7 @@ function rTuman(){
       +'</div>';
   }).join('');
 }
-
+ 
 // BALL BERISH
 function rBall(){
   var s=(g('ballSrch')?g('ballSrch').value.toLowerCase():'');
@@ -964,7 +965,7 @@ function addBall(id,sign){
   renderAll();
   toast(s.name+': '+(sign>0?'+':'−')+amt+' ball ✅');
 }
-
+ 
 // CALENDAR
 function rCalendar(){
   var months=["Yanvar","Fevral","Mart","Aprel","May","Iyun","Iyul","Avgust","Sentabr","Oktabr","Noyabr","Dekabr"];
@@ -1004,7 +1005,7 @@ function rCalendar(){
 }
 function changeMonth(d){calMonth+=d;if(calMonth<0){calMonth=11;calYear--}if(calMonth>11){calMonth=0;calYear++}rCalendar()}
 function selectDay(d){toast(d+'-'+(['Yan','Fev','Mar','Apr','May','Iyn','Iyl','Avg','Sen','Okt','Noy','Dek'][calMonth])+' '+calYear+' kuni tanlandi','i')}
-
+ 
 // TASK
 function rTask(){
   var pl={ph:'Yuqori',pm:"O'rta",pl:'Past'};
@@ -1014,7 +1015,7 @@ function rTask(){
       +'<div class="tfoot"><span class="tdl">📅 '+t.dl+'</span><span class="tpts">+'+t.pts+' ball</span></div></div>';
   }).join('');
 }
-
+ 
 // GALLERY
 function rGallery(){
   g('ggrid').innerHTML=DB.videos.map(function(v){
@@ -1023,7 +1024,7 @@ function rGallery(){
       +'<button class="wbtn" onclick="toast(\'Video tez orada qo\\\'shiladi 🎬\',\'i\')">▶ Ko\'rish</button></div></div>';
   }).join('');
 }
-
+ 
 // NEWS
 function rNews(){
   var h=DB.news.map(function(n){
@@ -1033,7 +1034,7 @@ function rNews(){
   if(g('ln'))g('ln').innerHTML=h;
   if(g('ngrid'))g('ngrid').innerHTML=h;
 }
-
+ 
 // ADMIN LISTS
 function rAdminLists(){
   g('scount').textContent=DB.sardorlar.length;
@@ -1058,7 +1059,7 @@ function rAdminLists(){
       +'<button class="delbtn" onclick="delEv('+ev.id+')">🗑</button></li>';
   }).join('');
 }
-
+ 
 // =====================================================
 // CRUD
 // =====================================================
@@ -1071,14 +1072,14 @@ function addS(){
   ['sn','st','ss','sd','simg'].forEach(c);renderAll();toast(name+' qo\'shildi ✅');
 }
 function delS(id){DB.sardorlar=DB.sardorlar.filter(function(x){return x.id!==id});renderAll();toast("Sardor o'chirildi",'i')}
-
+ 
 function addT(){
   var ti=v('tn');if(!ti){toast('Nom kiritilmadi ❌','w');return}
   DB.tasks.push({id:uid(),title:ti,desc:v('td'),pri:v('tp')||'pm',dl:v('tdl'),pts:parseInt(v('tpts'))||10,icon:v('te')||'📋'});
   ['tn','td','tdl','tpts','te'].forEach(c);renderAll();toast('Topshiriq qo\'shildi ✅');
 }
 function delT(id){DB.tasks=DB.tasks.filter(function(x){return x.id!==id});renderAll();toast("Topshiriq o'chirildi",'i')}
-
+ 
 function addN(){
   var ti=v('nn');if(!ti){toast('Sarlavha kiritilmadi ❌','w');return}
   var now=new Date(),ms=["Yan","Fev","Mar","Apr","May","Iyun","Iyul","Avg","Sen","Okt","Noy","Dek"];
@@ -1087,14 +1088,14 @@ function addN(){
   ['nn','nb','ntg'].forEach(c);renderAll();toast('Yangilik qo\'shildi ✅');
 }
 function delN(id){DB.news=DB.news.filter(function(x){return x.id!==id});renderAll();toast("Yangilik o'chirildi",'i')}
-
+ 
 function addV(){
   var ti=v('vn');if(!ti){toast('Nom kiritilmadi ❌','w');return}
   DB.videos.push({id:uid(),title:ti,sardor:v('vs'),url:v('vu')||'#',em:v('ve')||'🎬'});
   ['vn','vs','vu','ve'].forEach(c);renderAll();toast('Video qo\'shildi ✅');
 }
 function delV(id){DB.videos=DB.videos.filter(function(x){return x.id!==id});renderAll();toast("Video o'chirildi",'i')}
-
+ 
 function addEv(){
   var name=v('evn'),date=v('evd');
   if(!name||!date){toast('Tadbir nomi va sanasini kiriting ❌','w');return}
@@ -1102,13 +1103,13 @@ function addEv(){
   ['evn','evd','evdesc'].forEach(c);renderAll();toast('Tadbir qo\'shildi ✅');
 }
 function delEv(id){DB.events=DB.events.filter(function(x){return x.id!==id});renderAll();toast("Tadbir o'chirildi",'i')}
-
+ 
 function saveCfg(){
   var a=parseInt(v('ca')),vi=parseInt(v('cv'));
   if(a)DB.cfg.active=a;if(vi)DB.cfg.videos=vi;
   renderAll();toast('Saqlandi ✅');
 }
-
+ 
 function changePass(){
   var op=v('oldpass'),np=v('newpass'),np2=v('newpass2');
   var err=g('passErr');
@@ -1119,7 +1120,7 @@ function changePass(){
   ADMIN_PASS=np;try{localStorage.setItem(LS_PASS,np)}catch(e){};['oldpass','newpass','newpass2'].forEach(c);
   toast('Parol muvaffaqiyatli o\'zgartirildi ✅');
 }
-
+ 
 function sendMsg(){
   var type=v('msgtype'),reg=v('msgreg'),text=v('msgtext');
   if(!text){toast('Xabar matni kiriting ❌','w');return}
@@ -1135,7 +1136,7 @@ function sendMsg(){
   g('msgPreview').innerHTML=preview;
   toast('Ro\'yxat tayyorlandi! Telegram orqali yuboring ✅');
 }
-
+ 
 // =====================================================
 // EXPORT
 // =====================================================
@@ -1152,19 +1153,19 @@ function exportCSV(){
   a.click();
   toast('CSV eksport qilindi ✅');
 }
-
+ 
 function printReyting(){
   var rows=fd.length?fd:DB.sardorlar.slice().sort(function(a,b){return b.score-a.score});
   var html='<html><head><meta charset="UTF-8"><title>Sardorlar Reytingi</title>'
     +'<style>body{font-family:Georgia,serif;padding:24px;color:#0d2018}h1{color:#0a5c36;margin-bottom:8px}p{color:#6b8a78;font-size:.85rem;margin-bottom:20px}table{width:100%;border-collapse:collapse}th{background:#0a5c36;color:#fff;padding:10px;text-align:left;font-size:.82rem}td{padding:9px 10px;border-bottom:1px solid #e4ede7;font-size:.85rem}tr:nth-child(even){background:#f7faf8}@media print{button{display:none}}</style>'
-    +'</head><body><h1>🏆 Sardorlar Reytingi</h1><p>Buxoro Viloyati  · '+new Date().toLocaleDateString('uz-UZ')+'</p>'
+    +'</head><body><h1>🏆 Sardorlar Reytingi</h1><p>Buxoro Viloyati OBT · '+new Date().toLocaleDateString('uz-UZ')+'</p>'
     +'<table><thead><tr><th>#</th><th>Ism</th><th>Tuman</th><th>Ball</th><th>Holat</th><th>Telegram</th></tr></thead><tbody>'
     +rows.map(function(s,i){return '<tr><td>'+(i+1)+'</td><td>'+s.name+'</td><td>'+s.region+'</td><td>'+getScore(s)+'</td><td>'+getSt(getScore(s)).l+'</td><td>@'+s.tg+'</td></tr>';}).join('')
     +'</tbody></table></body></html>';
   var w=window.open('','_blank');w.document.write(html);w.document.close();setTimeout(function(){w.print()},400);
   toast('Chop etish oynasi ochildi 🖨️');
 }
-
+ 
 // =====================================================
 // UI
 // =====================================================
@@ -1176,7 +1177,7 @@ function show(id,btn,mbtn){
   document.querySelectorAll('.mni').forEach(function(b){b.classList.remove('on')});
   if(mbtn)mbtn.classList.add('on');
 }
-
+ 
 function openAdmin(){g('loginModal').classList.add('on');setTimeout(function(){g('loginPass').focus()},100)}
 function cancelLogin(){g('loginModal').classList.remove('on');c('loginPass');g('loginErr').classList.remove('on')}
 function checkLogin(){
@@ -1190,18 +1191,18 @@ function checkLogin(){
 }
 function closeAdmin(){g('adm').classList.remove('on')}
 g('adm').onclick=function(e){if(e.target===this)closeAdmin()}
-
+ 
 function atab(id,btn){
   document.querySelectorAll('.atab').forEach(function(b){b.classList.remove('on')});
   document.querySelectorAll('.asec').forEach(function(s){s.classList.remove('on')});
   btn.classList.add('on');g('as-'+id).classList.add('on');
 }
-
+ 
 function toggleTheme(){
   document.body.classList.toggle('dark');
   g('tdot').textContent=document.body.classList.contains('dark')?'🌙':'☀️';
 }
-
+ 
 function toast(msg,type){
   type=type||'s';
   var c=g('tcs'),t=document.createElement('div');
@@ -1209,10 +1210,11 @@ function toast(msg,type){
   t.innerHTML='<span>'+(type==='s'?'✅':type==='w'?'⚠️':'ℹ️')+'</span> '+msg;
   c.appendChild(t);setTimeout(function(){if(t.parentNode)t.parentNode.removeChild(t)},3200);
 }
-
+ 
 // INIT — localStorage dan yuklaymiz, keyin render qilamiz
 loadDB();
 renderAll();
 </script>
 </body>
 </html>
+ 
