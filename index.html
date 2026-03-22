@@ -401,7 +401,7 @@ body.dark .mni.on .ml{color:#16a05f}
     <div class="hstats">
       <div><div class="hsn" id="h1">4770</div><div class="hsl">Jami sardorlar</div></div>
       <div><div class="hsn" id="h2">312</div><div class="hsl">Faol sardorlar</div></div>
-      <div><div class="hsn" id="h3">87</div><div class="hsl">Topshirilgan videolar</div></div>
+      <div><div class="hsn" id="h3">20</div><div class="hsl">Topshirilgan videolar</div></div>
       <div><div class="hsn">13</div><div class="hsl">Tuman vs shahar</div></div>
     </div>
   </div>
@@ -414,7 +414,7 @@ body.dark .mni.on .ml{color:#16a05f}
   <div class="view on" id="v-dashboard">
     <div class="sg" id="sg"></div>
     <div class="stitle">🥇 Top 3 Sardorlar</div>
-    <div class="ssub">Eng ko'p ball to'plagan sardorlar</div>
+    <div class="ssub">Eng ko'p ovoz to'plagan sardorlar</div>
     <div class="podium" id="pod"></div>
     <div class="stitle" style="margin-top:28px">📢 So'nggi Yangiliklar</div>
     <div class="ssub">Barcha e'lonlar va yangiliklar</div>
@@ -717,9 +717,9 @@ var ADMIN_PASS = 'asilbek2026';
 
 var DB = {
   sardorlar: [
-    {id:1,name:"Aliyev Bekzod",region:"Buxoro tumani",tg:"sardor_bekzod",score:97,scoreW:97,scoreM:97,desc:"Navro'z va Mustaqillik tadbirlarini faol tashkil etdi",em:"👨",img:""},
-    {id:2,name:"Nazarova Nilufar",region:"Kogon tumani",tg:"nilufar_kogon",score:91,scoreW:88,scoreM:91,desc:"Eng birinchi video topshirdi, sport tadbirlarini uyushtirdi",em:"👩",img:""},
-    {id:3,name:"Toshmatov Jasur",region:"G'ijduvon tumani",tg:"jasur_gijduvon",score:87,scoreW:82,scoreM:87,desc:"Sumalak tayyorlash tadbirini tashkil etdi",em:"👨",img:""},
+    {id:1,name:"Shofirkon",region:"Shofirkon tumani sardorlari",tg:"muzaffarova162,score:630,scoreW:630,scoreM:630,desc:"Navro'z va Mustaqillik tadbirlarini faol tashkil etdi",em:"🥇",img:""},
+    {id:2,name:"Gi'jduvon",region:"Gi'jduvon tumani sardorlari",tg:"Maktab_sardori_Gijduvon",score:580,scoreW:580,scoreM:580,desc:"Navruz tadbirlarini uyushtirdi",em:"🥈",img:""},
+    {id:3,name:"Qorako'l",region:"Qorako'l tumani sardorlari",tg:"zarshidqurbonov",score:400,scoreW:400,scoreM:400,desc:"Sumalak tayyorlash tadbirini tashkil etdi",em:"🥉",img:""},
     {id:4,name:"Rahimova Sarvinoz",region:"Shofirkon tumani",tg:"sarvinoz_shof",score:82,scoreW:78,scoreM:82,desc:"Ijodiy video tayyorladi, 50+ ishtirokchi jalb etdi",em:"👩",img:""},
     {id:5,name:"Qodirov Mansur",region:"Vobkent tumani",tg:"mansur_vobkent",score:79,scoreW:79,scoreM:75,desc:"Mahalla sport musobaqasini uyushtirdi",em:"👨",img:""},
     {id:6,name:"Yusupova Zulfiya",region:"Romitan tumani",tg:"zulfiya_romitan",score:74,scoreW:70,scoreM:74,desc:"Kitob o'qish tadbirini tashkil etdi",em:"👩",img:""},
@@ -736,13 +736,13 @@ var DB = {
   ],
   news:[
     {id:1,title:"Yangi topshiriq e'lon qilindi!",body:"Navro'z tadbirini tashkil etish uchun yangi topshiriq qo'shildi. Eng faol sardorlarga mukofot beriladi.",tag:"Topshiriq",date:"19 Mart 2026"},
-    {id:2,title:"Top 3 sardorlar aniqlandi",body:"Bu oy eng faol sardorlar aniqlandi. Birinchi o'rinni Bekzod Aliyev egalladi.",tag:"Natija",date:"15 Mart 2026"},
-    {id:3,title:"Platform yangilandi",body:"Sardorlar platformasi yangi dizayn va funksiyalar bilan yangilandi.",tag:"Yangilik",date:"10 Mart 2026"}
+    {id:2,title:"Top 3 sardorlar aniqlandi",body:"Bu hafta eng faol sardorlar aniqlandi. Birinchi o'rinni Shofirkon tuman Sardorlari egalladi.",tag:"Natija",date:"22 Mart 2026"},
+    {id:3,title:"Platform yangilandi",body:"Sardorlar platformasi yangi dizayn va funksiyalar bilan yangilandi.",tag:"Yangilik",date:"22 Mart 2026"}
   ],
   videos:[
-    {id:1,title:"Navro'z tadbiri videosi",sardor:"Jasur Toshmatov",url:"#",em:"🌺"},
-    {id:2,title:"Sport musobaqasi videosi",sardor:"Bekzod Aliyev",url:"#",em:"⚽"},
-    {id:3,title:"Kitobxonlik tadbiri videosi",sardor:"Nilufar Nazarova",url:"#",em:"📚"}
+    {id:1,title:"Navro'z tadbiri videosi",sardor:"Shofirkon",url:"#",em:"🌺"},
+    {id:2,title:"Sport musobaqasi videosi",sardor:"Gijduvon",url:"#",em:"⚽"},
+    {id:3,title:"Kitobxonlik tadbiri videosi",sardor:"Qorakul",url:"#",em:"📚"}
   ],
   events:[
     {id:1,name:"Navro'z bayrami",date:"2026-03-21",desc:"Barcha tumanlar uchun umumiy Navro'z tadbiri",region:""},
@@ -816,7 +816,6 @@ function rStat(){
     {icon:"👥",num:DB.sardorlar.length,label:"Sardorlar soni"},
     {icon:"🏆",num:DB.cfg.active,label:"Faol sardorlar"},
     {icon:"🎥",num:DB.cfg.videos,label:"Topshirilgan videolar"},
-    {icon:"🏆",num:DB.cfg.videos,label:"Top 3 sardorlarga WEBSITE"},
   ];
   g('sg').innerHTML=items.map(function(i){
     return '<div class="sc"><div class="sc-icon">'+i.icon+'</div><div class="sc-num">'+i.num+'</div><div class="sc-label">'+i.label+'</div></div>';
@@ -833,7 +832,7 @@ function rPod(){
       +'<div class="prank">'+medals[i]+'</div>'+av
       +'<div class="pname">'+s.name+'</div>'
       +'<div class="pregion">'+s.region+'</div>'
-      +'<div class="pscore">⭐ '+s.score+' ball · '+prizes[i]+'</div>'
+      +'<div class="pscore">⭐ '+s.score+' ta ovoz'+prizes[i]+'</div>'
       +'<a class="tgbtn" href="https://t.me/'+s.tg+'" target="_blank">✉️ Murojaat qilish</a>'
       +'</div>';
   }).join('');
